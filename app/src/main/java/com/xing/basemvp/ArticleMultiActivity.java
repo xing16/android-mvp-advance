@@ -55,6 +55,7 @@ public class ArticleMultiActivity extends BaseMVPActivity<ArticleMultiPresenter>
         recyclerView.addItemDecoration(decoration);
         countTxtView = findViewById(R.id.tv_count);
         Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("");
         setSupportActionBar(toolbar);
     }
 
@@ -105,6 +106,6 @@ public class ArticleMultiActivity extends BaseMVPActivity<ArticleMultiPresenter>
 
     @Override
     public void showArticleCount(int count) {
-        countTxtView.setText(String.valueOf(count));
+        countTxtView.setText("文章(" + count + ")");
     }
 }
