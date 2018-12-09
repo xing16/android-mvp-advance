@@ -52,11 +52,11 @@ public class RetrofitClient {
         return instance;
     }
 
-    public static OkHttpClient getOkHttpClient() {
+    public OkHttpClient getOkHttpClient() {
         return okHttpClient;
     }
 
-    public static Retrofit getRetrofit() {
+    public Retrofit getRetrofit() {
         return retrofit;
     }
 
